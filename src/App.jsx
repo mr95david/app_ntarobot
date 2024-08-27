@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Rosconnect from './components/RosConnection'
 import './App.css'
 import CameraData from './components/CameraData';
+import VoiceRecorder from './components/Voicemicro';
 
 function App() {
   // Definicion de variables de entrada
@@ -15,6 +16,7 @@ function App() {
         {ros &&
           <CameraData ros={ros} />
         }
+        <VoiceRecorder />
       </div>
     </>
   );

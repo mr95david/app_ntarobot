@@ -15,7 +15,7 @@ const CameraData = ({ ros }) => {
         // Variable de almacenamiento de datos de imagenes
         const listener = new ROSLIB.Topic({
             ros: ros, // Instancia de ros usada (scope global)
-            name: '/color/image_raw/compressed', // Nombre del topico
+            name: '/compressed_image_topic', // Nombre del topico
             messageType: 'sensor_msgs/CompressedImage' // Tipo de imagen que se va a recibir
         });
 
